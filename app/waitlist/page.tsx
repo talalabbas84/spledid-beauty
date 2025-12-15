@@ -134,6 +134,7 @@ export default function WaitlistPage() {
               buttonClassName="w-full rounded-full bg-[#caa227] px-8 py-4 text-base font-semibold text-[#1d1610] shadow-[0_10px_30px_rgba(0,0,0,0.18)] transition hover:-translate-y-0.5 hover:bg-[#b68f1f] sm:w-auto sm:min-w-[170px]"
               buttonText="Join Waitlist"
               placeholder="Enter your email"
+              formId="mldqknea"
               successMessage="Thanks for joining! We'll be in touch soon."
               successClassName="text-white"
             />
@@ -287,6 +288,7 @@ export default function WaitlistPage() {
             buttonClassName="w-full rounded-full bg-[#1c140f] px-8 py-4 text-base font-semibold text-white shadow-[0_12px_30px_rgba(0,0,0,0.25)] transition hover:-translate-y-0.5 hover:bg-black sm:w-auto sm:min-w-[170px]"
             buttonText="Join Now"
             placeholder="Enter your email"
+            formId="mldqknea"
             successMessage="Thanks for joining! You'll be first to know."
             successClassName="text-white"
           />
@@ -316,6 +318,7 @@ export default function WaitlistPage() {
             buttonText="Subscribe"
             placeholder="Enter your email"
             successMessage="You're on the list!"
+            formId="mwpgjbpk"
           />
         </div>
       </section>
