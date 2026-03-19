@@ -8,6 +8,9 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { cn } from "@/lib/utils"
 
+const popupImage =
+  "https://res.cloudinary.com/ddue2t3ue/image/upload/fl_preserve_transparency/v1773933841/splendid-beauty/IMG_3451_c7tngt.jpg?_s=public-apps"
+
 export function EmailPopup() {
   const [isOpen, setIsOpen] = useState(false)
   const [email, setEmail] = useState("")
@@ -65,7 +68,8 @@ export function EmailPopup() {
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
-                backgroundImage: "url('/images/hero-bg.jpg')",
+                backgroundImage: `url(${popupImage})`,
+                backgroundPosition: "center 28%",
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />

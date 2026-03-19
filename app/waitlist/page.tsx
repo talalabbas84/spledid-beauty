@@ -86,6 +86,10 @@ const testimonials = [
 ]
 
 const ctaPerks = ["First access to launches", "Exclusive discounts", "Special welcome gift"]
+const heroCoverImage =
+  "https://res.cloudinary.com/ddue2t3ue/image/upload/fl_preserve_transparency/v1773933815/splendid-beauty/IMG_3442_hqqgb9.jpg?_s=public-apps"
+const heritageImage =
+  "https://res.cloudinary.com/ddue2t3ue/image/upload/fl_preserve_transparency/v1773933841/splendid-beauty/IMG_3451_c7tngt.jpg?_s=public-apps"
 
 export const metadata: Metadata = {
   title: "Waitlist | Splendid Beauty",
@@ -98,8 +102,16 @@ export default function WaitlistPage() {
     <div className="bg-[#f7f3ec] text-[#1d1610]">
       <section className="relative min-h-[95vh] overflow-hidden text-white">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[url('/african-woman-in-nature-golden-hour-beauty.jpg')] bg-cover bg-center" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/45 to-black/80" />
+          <div
+            className="absolute inset-0 bg-[#efe2ce] bg-cover bg-no-repeat"
+            style={{
+              filter: "brightness(0.58)",
+              backgroundImage: `url(${heroCoverImage})`,
+              backgroundPosition: "center 58%",
+            }}
+          />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(202,162,39,0.18),transparent_45%)]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/60 to-black/85" />
         </div>
 
         <div className="relative z-10 flex min-h-[95vh] flex-col">
@@ -198,10 +210,10 @@ export default function WaitlistPage() {
           <div className="relative overflow-hidden rounded-3xl shadow-2xl">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/10" />
             <Image
-              src="/smiling-african-woman.png"
-              alt="Confident woman representing Splendid Beauty"
-              width={900}
-              height={1100}
+              src={heritageImage}
+              alt="Portrait representing Splendid Beauty cultural roots"
+              width={3341}
+              height={4455}
               className="h-full w-full object-cover"
               priority
             />
