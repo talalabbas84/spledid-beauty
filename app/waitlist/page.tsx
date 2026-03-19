@@ -9,9 +9,7 @@ import {
   ChevronDown,
   Crown,
   Gift,
-  Quote,
   Sparkles,
-  Star,
 } from "lucide-react"
 
 const heroPerks = [
@@ -58,30 +56,6 @@ const heritagePillars = [
     title: "Community Impact",
     description:
       "Your purchase supports local communities, fair trade practices, and the preservation of cultural beauty traditions.",
-  },
-]
-
-const testimonials = [
-  {
-    quote:
-      "As a beta tester, I can't wait for everyone to experience these products. They're truly transformative and celebrate our heritage beautifully.",
-    name: "Amara Johnson",
-    location: "Atlanta, GA",
-    role: "EARLY ACCESS MEMBER",
-  },
-  {
-    quote:
-      "I've been waiting for a brand like this! The attention to cultural authenticity while maintaining luxury quality is unprecedented.",
-    name: "Kendra Baptiste",
-    location: "Toronto, ON",
-    role: "BEAUTY ENTHUSIAST",
-  },
-  {
-    quote:
-      "Finally, a brand that understands the intersection of heritage and modern beauty. Can't wait to see this launch!",
-    name: "Nia Williams",
-    location: "London, UK",
-    role: "INDUSTRY INSIDER",
   },
 ]
 
@@ -191,18 +165,6 @@ export default function WaitlistPage() {
           ))}
         </div>
 
-        <div className="mx-auto mt-12 flex max-w-3xl items-center gap-4 rounded-full bg-[#f3ede3] px-6 py-4 text-[#1d1610] shadow-inner">
-          <div className="flex -space-x-3">
-            {["#caa227", "#b48c22", "#9f7a1c", "#7b5c15"].map((color, index) => (
-              <span
-                key={color}
-                className="h-8 w-8 rounded-full border-2 border-[#f3ede3]"
-                style={{ background: color, zIndex: 4 - index }}
-              />
-            ))}
-          </div>
-          <span className="text-sm font-semibold">2,847 beauty lovers already joined</span>
-        </div>
       </section>
 
       <section className="bg-[#fdfaf4] px-6 py-24 md:px-12">
@@ -247,42 +209,6 @@ export default function WaitlistPage() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="bg-white px-6 py-20 md:px-12">
-        <div className="mx-auto max-w-5xl text-center">
-          <h3 className="text-4xl font-semibold text-[#1c140f] sm:text-5xl">Early Access Community</h3>
-          <p className="mt-4 text-lg text-[#5c5350]">
-            Hear from those who&apos;ve had a sneak peek at what&apos;s coming
-          </p>
-        </div>
-
-        <div className="mx-auto mt-12 grid max-w-6xl gap-8 md:grid-cols-3">
-          {testimonials.map(({ quote, name, location, role }) => (
-            <div
-              key={name}
-              className="flex h-full flex-col gap-4 rounded-3xl bg-[#f8f4ec] p-6 shadow-[0_12px_30px_rgba(0,0,0,0.06)]"
-            >
-              <Quote className="h-10 w-10 text-[#d5c39a]" />
-              <div className="flex items-center gap-1 text-[#caa227]">
-                {Array.from({ length: 5 }).map((_, idx) => (
-                  <Star key={idx} className="h-4 w-4 fill-[#caa227]" />
-                ))}
-              </div>
-              <p className="text-base leading-relaxed text-[#3d342f]">"{quote}"</p>
-              <div className="mt-auto space-y-1">
-                <p className="text-base font-semibold text-[#1c140f]">{name}</p>
-                <p className="text-sm text-[#736b66]">{location}</p>
-                <p className="text-xs font-semibold tracking-wide text-[#b58a1d]">{role}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="mx-auto mt-10 max-w-3xl text-center text-sm text-[#4b403b]">
-          Want to be part of the early access community?{" "}
-          <span className="font-semibold text-[#caa227] underline decoration-[#caa227]/60">Join the waitlist today</span>
         </div>
       </section>
 
